@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>urn:pedidos:catalogo</id>
+  <title>Pedidos</title>
+  <updated>2026-11-01T21:41:11-03:00</updated>
+  <author><name>Pedidos (Claude)</name></author>
+  <link rel="self" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+
+</feed>
