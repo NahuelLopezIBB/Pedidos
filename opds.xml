@@ -2,10 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>urn:pedidos:catalogo</id>
   <title>Pedidos</title>
-  <updated>2026-11-01T22:11:57-03:00</updated>
+  <updated>2026-11-02T00:46:50-03:00</updated>
   <author><name>Pedidos (Claude)</name></author>
   <link rel="self" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <entry>
+    <title>Verificación: las cifras y tesis de Ha-Joon Chang sobre la historia del capitalismo</title>
+    <id>urn:pedidos:2026-11-02-chang-verificacion-cifras.epub</id>
+    <updated>2026-11-02T00:46:50-03:00</updated>
+    <author><name>Pedidos (Claude)</name></author>
+    <dc:language>es</dc:language>
+    <summary>Capítulos: Resumen de veredictos · 1. De dónde salen los números y cuánto valen · 2. Las tasas de crecimiento, época por época · 3. Proteccionismo: ¿se hicieron ricos los países ricos protegiéndose? · 4. La Gran Depresión y los aranceles Smoot-Hawley · 5. La industrialización soviética · 6. La Edad Dorada: ¿por qué se creció tanto? · 7. Neoliberalismo y países en desarrollo · 8. La transición postsoviética · 9. Otras afirmaciones del capítulo · Balance · Fuentes</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://nahuellopezibb.github.io/Pedidos/archivos/2026-11-02-chang-verificacion-cifras.epub" type="application/epub+zip"/>
+  </entry>
   <entry>
     <title>Resumen: breve historia del capitalismo según Ha-Joon Chang</title>
     <id>urn:pedidos:2026-11-01-resumen-historia-capitalismo.epub</id>
