@@ -2,9 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>urn:pedidos:catalogo</id>
   <title>Pedidos</title>
-  <updated>2026-11-01T21:41:11-03:00</updated>
+  <updated>2026-11-01T22:08:32-03:00</updated>
   <author><name>Pedidos (Claude)</name></author>
   <link rel="self" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
-
+  <entry>
+    <title>Resumen: las escuelas económicas según Ha-Joon Chang</title>
+    <id>urn:pedidos:2026-11-01-resumen-escuelas-economicas.epub</id>
+    <updated>2026-11-01T22:08:32-03:00</updated>
+    <author><name>Pedidos (Claude)</name></author>
+    <dc:language>es</dc:language>
+    <summary>Capítulos: Idea central del capítulo · Mapa rápido · Escuela clásica · Escuela neoclásica · Escuela marxista · Tradición desarrollista · Escuela austríaca · Escuela (neo)schumpeteriana · Escuela keynesiana · Escuela institucionalista (vieja y nueva) · Escuela conductista · Comparación entre escuelas · Cruces entre escuelas · Preguntas para repasar</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://nahuellopezibb.github.io/Pedidos/archivos/2026-11-01-resumen-escuelas-economicas.epub" type="application/epub+zip"/>
+  </entry>
 </feed>
