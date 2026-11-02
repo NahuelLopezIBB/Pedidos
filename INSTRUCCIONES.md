@@ -41,6 +41,10 @@ Reglas del formato:
   Kindle es angosta: máximo **4 columnas** y celdas cortas. Si no entra, usar
   una lista con un elemento por fila.
 - Las líneas que empiezan con `Fuentes:` se muestran en letra chica.
+- Imágenes: una línea sola con `![pie de figura](img/<carpeta>/archivo.png)`, con la
+  ruta relativa a `pedidos/`. El generador las mete dentro del EPUB. Para el Kindle
+  conviene PNG en escala de grises, de unos 600 px de ancho, con letra grande. Los
+  scripts que generan gráficos van en `tools/` (ejemplo: `tools/graficos_clases_3_8.py`).
 
 Criterios de contenido (salvo que el pedido diga otra cosa):
 

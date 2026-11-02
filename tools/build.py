@@ -63,7 +63,29 @@ table { border-collapse: collapse; width: 100%; margin: 0.4em 0 1em; font-size: 
 th, td { border: 1px solid #000; padding: 0.25em 0.35em; text-align: left; vertical-align: top; }
 th { font-weight: bold; }
 td.num, th.num { text-align: right; }
+div.fig { margin: 0.8em 0 1em; text-align: center; page-break-inside: avoid; }
+div.fig img { max-width: 100%; height: auto; }
+p.cap { font-size: 0.85em; font-style: italic; text-align: center; margin-top: 0.2em; }
 """
+
+IMAGES = []  # imágenes usadas por el libro que se está armando: (ruta en disco, nombre en el epub)
+IMG_BASE = None  # carpeta del .md, para resolver rutas relativas
+IMG_TYPES = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
+             ".gif": "image/gif", ".svg": "image/svg+xml"}
+
+
+def image_html(alt: str, ruta: str) -> str:
+    """![pie](ruta) -> figura. La imagen se copia dentro del EPUB."""
+    src = (IMG_BASE / ruta).resolve()
+    if not src.exists():
+        sys.exit(f"No existe la imagen {src}")
+    if src.suffix.lower() not in IMG_TYPES:
+        sys.exit(f"Formato de imagen no soportado: {src.suffix}")
+    nombre = f"img{len(IMAGES) + 1:03d}{src.suffix.lower()}"
+    IMAGES.append((src, nombre))
+    cap = f'<p class="cap">{inline(alt)}</p>' if alt else ""
+    return (f'<div class="fig"><img src="img/{nombre}" alt="{html.escape(alt)}"/>'
+            f"{cap}</div>")
 
 
 # ---------------------------------------------------------------- markdown
@@ -121,8 +143,12 @@ def blocks_to_html(lines):
 
     for raw in lines:
         line = raw.rstrip()
+        img = re.fullmatch(r"\s*!\[([^\]]*)\]\(([^)\s]+)\)\s*", line)
         if not line.strip():
             flush()
+        elif img:
+            flush()
+            parts.append(image_html(img.group(1), img.group(2)))
         elif line.lstrip().startswith("|"):
             if para or items:
                 flush()
@@ -177,6 +203,7 @@ def build_epub(date: str, title: str, intro, sections, out: Path):
     book_id = f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, BASE_URL + '/' + date)}"
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    IMAGES.clear()
     chapters = []  # (filename, title, xhtml)
     intro_html = blocks_to_html(intro)
     toc_list = "".join(f"<li>{html.escape(s['title'])}</li>" for s in sections)
@@ -191,6 +218,9 @@ def build_epub(date: str, title: str, intro, sections, out: Path):
     manifest = "\n".join(
         f'    <item id="c{i}" href="{f}" media-type="application/xhtml+xml"/>'
         for i, (f, _, _) in enumerate(chapters))
+    manifest += "".join(
+        f'\n    <item id="i{i}" href="img/{n}" media-type="{IMG_TYPES[Path(n).suffix]}"/>'
+        for i, (_, n) in enumerate(IMAGES))
     spine = "\n".join(f'    <itemref idref="c{i}"/>' for i in range(len(chapters)))
     opf = f"""<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="es">
@@ -241,6 +271,8 @@ def build_epub(date: str, title: str, intro, sections, out: Path):
         z.writestr("OEBPS/style.css", CSS, compress_type=zipfile.ZIP_DEFLATED)
         for f, _, body in chapters:
             z.writestr(f"OEBPS/{f}", body, compress_type=zipfile.ZIP_DEFLATED)
+        for src, n in IMAGES:
+            z.write(src, f"OEBPS/img/{n}", compress_type=zipfile.ZIP_STORED)
 
 
 # ------------------------------------------------------------ opds / index
@@ -321,6 +353,8 @@ def main():
                  "(tema en minúsculas, sin acentos, con guiones)")
 
     if src.parent == SRC_DIR and ext == ".md":
+        global IMG_BASE
+        IMG_BASE = src.parent
         title, intro, sections = parse_edition(src.read_text(encoding="utf-8"))
         name = f"{stem}.epub"
         build_epub(stem, title, intro, sections, OUT_DIR / name)

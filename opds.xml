@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>urn:pedidos:catalogo</id>
   <title>Pedidos</title>
-  <updated>2026-11-02T10:17:41-03:00</updated>
+  <updated>2026-11-02T12:05:02-03:00</updated>
   <author><name>Pedidos (Claude)</name></author>
   <link rel="self" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://nahuellopezibb.github.io/Pedidos/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <entry>
-    <title>Resumen de conceptos: Economía, clases 3 a 8</title>
-    <id>urn:pedidos:2026-11-02-resumen-clases-3-a-8.epub</id>
-    <updated>2026-11-02T10:17:41-03:00</updated>
+    <title>Resumen de conceptos con gráficos: Economía, clases 3 a 8</title>
+    <id>urn:pedidos:2026-11-02-resumen-clases-3-a-8-graficos.epub</id>
+    <updated>2026-11-02T12:05:02-03:00</updated>
     <author><name>Pedidos (Claude)</name></author>
     <dc:language>es</dc:language>
     <summary>Capítulos: Clase 3: teoría del consumidor y demanda · Clase 4: producción y costos (Krugman, cap. 6) · Clase 5: la empresa en competencia perfecta y el monopolio · Clase 6: óptimo de Pareto y economía del bienestar · Clase 7: introducción a la macroeconomía (Krugman, caps. 10 a 12) · Clase 8: crecimiento económico a largo plazo (Krugman, cap. 13) · Conceptos clave por clase · Preguntas para repasar</summary>
-    <link rel="http://opds-spec.org/acquisition" href="https://nahuellopezibb.github.io/Pedidos/archivos/2026-11-02-resumen-clases-3-a-8.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/acquisition" href="https://nahuellopezibb.github.io/Pedidos/archivos/2026-11-02-resumen-clases-3-a-8-graficos.epub" type="application/epub+zip"/>
   </entry>
   <entry>
     <title>Verificación: las cifras y tesis de Ha-Joon Chang sobre la historia del capitalismo</title>

@@ -1,6 +1,6 @@
-# Resumen de conceptos: Economía, clases 3 a 8
+# Resumen de conceptos con gráficos: Economía, clases 3 a 8
 
-Apunte de estudio con los conceptos de la bibliografía de las clases 3 a 8, redactado con palabras propias. Uso "costo" en todo el texto, aunque Krugman (traducción española) escribe "coste" y "output".
+Apunte de estudio con los conceptos de la bibliografía de las clases 3 a 8, redactado con palabras propias y con 22 gráficos. Los gráficos son esquemas propios que reproducen los de la bibliografía; donde se usan los ejemplos numéricos de Krugman o del apunte, se indica. Uso "costo" en todo el texto, aunque Krugman (traducción española) escribe "coste" y "output".
 
 | Clase | Tema | Texto |
 |---|---|---|
@@ -40,6 +40,8 @@ Una advertencia general: los apuntes de cátedra (clases 3, 5 y 6) exponen la te
   - nunca se cortan;
   - son convexas hacia el origen;
   - por cada punto del espacio de bienes pasa alguna curva.
+
+![Mapa de indiferencia: cada curva es un nivel de utilidad; las más alejadas del origen son preferidas.](img/clases-3-a-8/c3-indiferencia.png)
 - **Utilidad marginal (UMg):** cuánto aumenta la utilidad total al consumir una unidad más de un bien. Matemáticamente, la derivada parcial de la función de utilidad. Se supone **decreciente**.
 - **Razón marginal de sustitución (RMS):** cuánto de y está dispuesto a ceder el consumidor por una unidad más de x sin cambiar su satisfacción. Es la pendiente de la curva de indiferencia (con signo cambiado) y es igual al cociente de las utilidades marginales: RMS = UMgx / UMgy.
 
@@ -50,6 +52,8 @@ Una advertencia general: los apuntes de cátedra (clases 3, 5 y 6) exponen la te
 - **Condición de óptimo:** RMS = Px/Py, o lo que es lo mismo, UMgx/Px = UMgy/Py. El último peso gastado en cada bien tiene que dar la misma utilidad.
 - **Resolución formal:** con el método de multiplicadores de Lagrange (condiciones de primer orden); la condición de segundo orden se cumple si las curvas son convexas.
 - **Ejemplo del apunte:** con U = x·y, las demandas son x = Y/(2Px) e y = Y/(2Py). El consumidor gasta la mitad del ingreso en cada bien.
+
+![El equilibrio es la tangencia entre la recta de presupuesto y la curva de indiferencia más alta alcanzable.](img/clases-3-a-8/c3-equilibrio.png)
 
 ### Las funciones de demanda
 
@@ -63,9 +67,13 @@ Una advertencia general: los apuntes de cátedra (clases 3, 5 y 6) exponen la te
   - Si cambia cualquier otro determinante (ingreso, gustos, precios de bienes relacionados), la curva entera se desplaza. Por ejemplo, un aumento del ingreso la desplaza a la derecha si el bien es normal.
 - **Demanda de mercado:** la suma horizontal de las demandas individuales.
 
+![Un cambio de precio mueve al consumidor sobre la curva; un cambio de ingreso desplaza la curva.](img/clases-3-a-8/c3-demanda.png)
+
 ### Excedente del consumidor
 
 Es la diferencia entre lo máximo que el consumidor estaría dispuesto a pagar y lo que efectivamente paga. Gráficamente, el área entre la curva de demanda y la línea del precio. Se usa mucho en la evaluación de proyectos.
+
+![Excedente del consumidor: el área entre la demanda y el precio.](img/clases-3-a-8/c3-excedente.png)
 
 ### Elasticidades
 
@@ -82,6 +90,8 @@ Es la diferencia entre lo máximo que el consumidor estaría dispuesto a pagar y
 | Inelástica | el gasto baja | el gasto sube |
 
 En una demanda lineal, el gasto total es máximo en el punto de elasticidad unitaria (el punto medio de la recta).
+
+![En una demanda lineal la elasticidad baja a lo largo de la recta; el ingreso total es máximo donde e = 1.](img/clases-3-a-8/c3-elasticidad.png)
 
 - **Elasticidad ingreso:** cuánto cambia la cantidad demandada cuando cambia el ingreso.
   - negativa: bien **inferior**;
@@ -120,11 +130,15 @@ En una demanda lineal, el gasto total es máximo en el punto de elasticidad unit
   - Es una afirmación "manteniendo todo lo demás igual". Si aumenta el input fijo (más tierra), las curvas de producto total y marginal se desplazan hacia arriba.
   - **Ejemplo del "mítico hombre-mes"** (Brooks): sumar programadores a un proyecto rinde cada vez menos, por el tiempo que se pierde en coordinar, y pasado cierto punto el producto marginal es negativo.
 
+![Datos de la granja de Krugman: el producto total se aplana porque el producto marginal cae.](img/clases-3-a-8/c4-producto.png)
+
 ### Los costos
 
 - **Costo fijo (CF):** no depende de cuánto se produce; es el costo del input fijo. **Costo variable (CV):** depende de la producción.
 - **Costo total:** CT = CF + CV. La curva de costo total tiene pendiente cada vez mayor, por los rendimientos decrecientes del input variable.
 - **Costo de oportunidad:** si la granja usa tierra propia, igual tiene un costo: lo que dejaría de ganar alquilándola.
+
+![Costo total de la granja: parte del costo fijo (400 $) y se empina por los rendimientos decrecientes.](img/clases-3-a-8/c4-costo-total.png)
 - **Costo marginal:** CMg = ΔCT/ΔQ, el costo de producir una unidad más. Es la pendiente del costo total. Sube con la producción porque cada unidad extra exige cada vez más input variable.
   - Que el producto total se aplane y que el costo total se empine son "dos caras de la misma moneda".
 - **Costos medios:**
@@ -141,6 +155,8 @@ En una demanda lineal, el gasto total es máximo en el punto de elasticidad unit
   - si el costo marginal está por debajo del medio, lo hace bajar; si está por encima, lo hace subir.
   - En la práctica la curva de costo marginal suele tener forma de "pipa": baja al principio, porque los primeros trabajadores permiten especializarse (rendimientos crecientes), y después sube.
 
+![Datos de Selena's Gourmet Salsas (Krugman): el CMg corta al CTMe en su mínimo, el punto M.](img/clases-3-a-8/c4-costos-medios.png)
+
 ### Corto y largo plazo
 
 - **A largo plazo la empresa elige su costo fijo** (por ejemplo, el tamaño de la planta) según la producción que espera. Un costo fijo alto conviene si va a producir mucho; uno bajo, si va a producir poco.
@@ -151,6 +167,8 @@ En una demanda lineal, el gasto total es máximo en el punto de elasticidad unit
   - **Decrecientes** (deseconomías de escala): el costo medio a largo plazo sube. La causa son los problemas de coordinación y comunicación en empresas muy grandes.
   - **Constantes:** el costo medio no cambia con la escala.
   - Los rendimientos crecientes empujan a las empresas a crecer y los decrecientes las limitan.
+
+![La curva de largo plazo envuelve a las de corto plazo: cada una corresponde a un tamaño de planta.](img/clases-3-a-8/c4-largo-plazo.png)
 - **Ejemplo inicial:** los agricultores europeos sacan tres veces más trigo por hectárea que los de EE.UU. porque sus políticas les garantizan precios más altos, y eso les conviene usar más inputs por hectárea "en el margen".
 
 ## Clase 5: la empresa en competencia perfecta y el monopolio
@@ -199,10 +217,14 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
 - **Curva de oferta de la empresa:** el tramo creciente de su costo marginal, por encima del mínimo del costo variable medio.
 - **Oferta de la industria:** la suma horizontal de los costos marginales de las empresas.
 
+![La empresa produce donde p = CMg; el área gris es el beneficio. Por debajo del mínimo del CVMe, cierra.](img/clases-3-a-8/c5-firma.png)
+
 ### Equilibrio de mercado
 
 - **Precio y cantidad de equilibrio:** donde la cantidad demandada es igual a la ofrecida. Con un precio más alto hay excedente y el precio tiende a bajar.
 - **Ejemplo del apunte:** con demanda x = 20 − 0,75p y oferta x = 4 + 0,25p, el equilibrio es p = 16 y x = 8.
+
+![El ejemplo numérico del apunte: con un precio mayor al de equilibrio hay excedente de oferta.](img/clases-3-a-8/c5-mercado.png)
 - **Crítica del apunte:** el modelo es estático, sin tiempo histórico. Las expectativas sobre precios futuros cambian lo que se compra hoy; no se puede "ir y volver" entre puntos como un péndulo.
 - **Largo plazo:** la empresa elige la escala de planta donde el costo marginal de largo plazo es igual al ingreso marginal. Crítica: el supuesto de conocimiento perfecto ignora la incertidumbre, que es la que explica las fluctuaciones. Si se espera que el mercado se contraiga, no se invierte, y eso termina contrayéndolo.
 
@@ -226,10 +248,14 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
   - El ingreso marginal es menor que el precio: con demanda p = a − bx, el ingreso marginal es a − 2bx (el mismo punto de partida y el doble de pendiente).
   - **IMg = P − P/e:** con e > 1 el ingreso marginal es positivo; con e = 1 es cero (el ingreso total es máximo); con e < 1 es negativo. Por eso un monopolista con costos positivos siempre produce en el tramo **elástico** de la demanda.
 - **Equilibrio del monopolista:** produce donde IMg = CMg y cobra el precio que marca la demanda para esa cantidad. Produce menos y cobra más que en competencia, y se pierde parte del excedente total.
+
+![El monopolista produce qm (IMg = CMg) y cobra pm; en competencia sería qc y pc. El triángulo gris es la pérdida de excedente.](img/clases-3-a-8/c5-monopolio.png)
 - **Regulación:**
   - **Precio máximo** igual al costo marginal en el punto donde corta la demanda: el monopolista pasa a actuar como competidor, produce más y cobra menos.
   - **Impuesto específico** (por unidad): sube el costo marginal, así que el monopolista produce menos y traslada parte del impuesto al precio.
   - **Impuesto fijo global:** es un costo fijo, no cambia el costo marginal ni el precio ni la cantidad. Reduce el beneficio sin perjudicar al consumidor.
+
+![El impuesto específico desplaza el CMg; el fijo no lo toca.](img/clases-3-a-8/c5-impuestos.png)
 
 ## Clase 6: óptimo de Pareto y economía del bienestar
 
@@ -256,6 +282,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
   - Cada consumidor iguala su RMS al cociente de precios. Como todos enfrentan los mismos precios, **todos tienen la misma RMS** entre cada par de bienes.
   - **Caja de Edgeworth:** los óptimos son los puntos de tangencia entre las curvas de indiferencia de los dos consumidores. Esa línea es la **curva de contrato**.
   - Fuera de la curva de contrato se puede mejorar a uno sin empeorar al otro. Sobre ella, mejorar a uno empeora al otro.
+
+![Caja de Edgeworth: los óptimos de Pareto son las tangencias entre curvas de A y de B, que forman la curva de contrato.](img/clases-3-a-8/c6-edgeworth.png)
 - **2. Óptimo de producción:**
   - Cada empresa contrata cada factor hasta que el **valor del producto marginal** sea igual a su precio: VPM = p·PMg = r.
   - Como los precios de los factores son iguales para todos, el valor del producto marginal de cada factor es el mismo en todos sus usos.
@@ -265,6 +293,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
   - La **curva de transformación** (frontera de posibilidades de producción) muestra cuánto de un bien hay que sacrificar para producir más del otro. Su pendiente es la **razón de transformación de la producción** (RTP).
   - Condición: **RMS = Px/Py = RTP**. La producción se ajusta a las preferencias de los consumidores.
   - **El mecanismo:** si los consumidores pasan a preferir más un bien, sube su precio y con él el valor del producto marginal de los factores que lo producen. Los factores se desplazan hacia ese bien hasta que las razones vuelven a igualarse.
+
+![En el óptimo general, la pendiente de la curva de transformación (RTP) es igual al cociente de precios y a la RMS.](img/clases-3-a-8/c6-transformacion.png)
 - **Son condiciones necesarias, no suficientes:** con rendimientos crecientes, que son frecuentes en la realidad, el óptimo puede no existir.
 
 ### Críticas a la validez del óptimo
@@ -283,6 +313,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
 - **El problema:** el óptimo de Pareto no elige un punto de la curva de contrato.
 - **La respuesta de la economía del bienestar:** una **función social de bienestar** que asigna valor a la utilidad de cada persona y permite elegir un punto de la curva de posibilidades de utilidad, donde la toca la curva de bienestar social más alta.
 - **El límite:** esa función no surge de las preferencias individuales. Siempre expresa un **juicio de valor político** sobre la distribución.
+
+![La función social de bienestar elige un punto (P) de la frontera de utilidades; Pareto solo descarta los puntos interiores como M.](img/clases-3-a-8/c6-bienestar.png)
 - **Conclusión del apunte:**
   - Los precios de mercado no son señales adecuadas para una asignación eficiente en las economías reales.
   - El óptimo no queda determinado sin un criterio político.
@@ -308,6 +340,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
   - **Expansión:** suben la producción y el empleo.
   - **Pico:** donde la expansión pasa a recesión. **Valle:** donde la recesión pasa a expansión.
   - El efecto más grave de una recesión es sobre el empleo. El indicador principal es la tasa de desempleo.
+
+![El ciclo económico: recesiones (gris) entre un pico y un valle, alrededor de una tendencia creciente.](img/clases-3-a-8/c7-ciclo.png)
 - **2. Crecimiento a largo plazo:** el aumento sostenido de la producción, que explica la suba del nivel de vida. Es un fenómeno relativamente moderno y es aún más importante para los países pobres.
 - **3. Inflación y deflación:**
   - **Inflación:** suba del nivel general de precios. **Deflación:** baja del nivel general de precios.
@@ -331,6 +365,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
   - **Nominal:** valúa la producción a precios corrientes. Mezcla el aumento de cantidades con el de precios: en el ejemplo de las manzanas y naranjas, el PIB nominal sube 50 % pero la producción real solo 15 %.
   - **Real:** valúa la producción a precios de un **año base**. Es la medida adecuada de la actividad.
   - **Dólares encadenados:** el resultado cambia según el año base elegido, así que EE.UU. promedia las tasas de crecimiento calculadas con distintos años base.
+
+![El ejemplo de Krugman: el PIB nominal sube 50 % pero la producción real solo 15 %.](img/clases-3-a-8/c7-pib.png)
 - **PIB per cápita:** el PIB dividido por la población. El PIB real per cápita mide la producción media por persona.
 - **Lo que el PIB no mide:**
   - no es una medida de bienestar ni de felicidad;
@@ -361,10 +397,14 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
 - **Relación con el crecimiento:**
   - si el PIB real crece por encima de su promedio, el desempleo baja;
   - si crece por debajo, el desempleo sube aunque la economía crezca. Eso pasa en las **recuperaciones sin empleo** después de recesiones profundas.
+
+![Relación entre crecimiento y desempleo (datos ilustrativos, no reales): los años de crecimiento sobre el promedio reducen el desempleo.](img/clases-3-a-8/c7-okun.png)
 - **Tipos de desempleo:**
   - **Friccional:** el tiempo que lleva buscar un empleo adecuado. Es inevitable y en parte útil.
   - **Estructural:** hay más gente buscando trabajo que puestos, porque el salario está por encima del de equilibrio. Las causas son el **salario mínimo**, los **sindicatos**, los **salarios de eficiencia** (pagar más para retener o motivar), los efectos secundarios de políticas como un seguro de desempleo generoso, y los desajustes entre las capacidades de los trabajadores y lo que piden los empleos. Ejemplo: Alemania del Este tras la reunificación.
   - **Cíclico:** la diferencia entre la tasa de desempleo observada y la natural, causada por el ciclo.
+
+![Un salario por encima del de equilibrio (WE) genera más oferta que demanda de trabajo: desempleo estructural.](img/clases-3-a-8/c7-desempleo.png)
 - **Tasa natural de desempleo:** friccional más estructural. Es la tasa normal alrededor de la cual fluctúa la observada. Cambia con las características de los trabajadores, las instituciones del mercado laboral y las políticas.
 - **Desempleo observado:** natural más cíclico.
 
@@ -393,6 +433,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
 - **Regla del 70:** años para duplicar el ingreso ≈ 70 / tasa de crecimiento anual (en %). Al 2 % anual se duplica en unos 35 años; al 7 %, en unos 10.
 - **Las tasas de crecimiento varían mucho entre países y épocas.** La India, por ejemplo, aceleró mucho desde los años 80, aunque tiene cuellos de botella en educación e infraestructura.
 
+![Regla del 70: cuanto mayor la tasa, más rápido se duplica el ingreso.](img/clases-3-a-8/c8-regla70.png)
+
 ### Las fuentes del crecimiento
 
 - **Productividad del trabajo:** el output por trabajador (o por hora). Es la clave: el crecimiento sostenido solo ocurre si cada trabajador produce cada vez más.
@@ -403,6 +445,8 @@ Es el plazo en que la oferta está fija (por ejemplo, una cosecha ya levantada):
 - **Función de producción agregada:** la productividad depende del capital físico por trabajador, del capital humano por trabajador y de la tecnología.
 - **Rendimientos decrecientes del capital físico:** con el capital humano y la tecnología fijos, cada aumento del capital físico por trabajador sube cada vez menos la productividad. El primer tractor cambia todo; el décimo, poco. Por eso acumular capital solo no sostiene el crecimiento.
 - **El progreso tecnológico** desplaza hacia arriba toda la función de producción: más productividad con cualquier cantidad de capital.
+
+![Rendimientos decrecientes del capital físico; el progreso tecnológico desplaza la curva hacia arriba.](img/clases-3-a-8/c8-produccion.png)
 - **Contabilidad del crecimiento:** separa el aporte de cada fuente. Lo que no explican el capital físico ni el humano es la **productividad total de los factores** (PTF): cuánto se produce con una cantidad dada de factores. Se la usa como medida del progreso tecnológico, y es la parte más grande del crecimiento.
   - La educación, según estos estudios, pesa incluso más que el capital físico.
 - **La paradoja de Solow:** "se ven computadoras en todas partes menos en las estadísticas". La explicación de Paul David es que una tecnología nueva tarda en rendir hasta que se reorganizan los procesos, como pasó con la electricidad en las fábricas.
